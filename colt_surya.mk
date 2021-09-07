@@ -21,21 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit from common ConquerOS configuration
-$(call inherit-product, vendor/conquer/config/common.mk)
-CONQUER_BUILD_TYPE := OFFICIAL
+# Inherit from common ColtOS configuration
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := conquer_surya
+PRODUCT_NAME := colt_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_PRODUCT_PROPERTIES += \
-	ro.conquer.device_name=POCO X3 NFC

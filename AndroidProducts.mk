@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/conquer_surya.mk
+    $(LOCAL_DIR)/colt_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    conquer_surya-user \
-    conquer_surya-userdebug \
-    conquer_surya-eng
+    colt_surya-user \
+    colt_surya-userdebug \
+    colt_surya-eng
