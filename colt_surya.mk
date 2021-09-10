@@ -28,8 +28,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Maintainer
+# Official
 COLT_BUILD_MAINTAINER := i-Jack
+COLT_BUILD_TYPE := Official
 
 # Device identifier
 PRODUCT_NAME := colt_surya
